@@ -35,6 +35,8 @@ if tracker.last?.major == 1 {
 
 ## Usage
 
+Japanese is [here](http://qiita.com/notohiro/items/5df626edbca03ca540d0).
+
 ### Parameters
 
 - `isFirstLaunchEver: Bool` returns whether it's first launch or not.
@@ -46,11 +48,11 @@ if tracker.last?.major == 1 {
 - `last: T?` represents a version which last launched.
 - `history: [T]` represents all the history of installed versions.
 
-### What's T?
+### What's `T`?
 
 `SwiftyVersionTracker` is build on Protocol Oriented Programming. We defined `SwiftyVersion` as protocol, so you can use `SwiftyVersionTracker` with any type of versioning rules and literals.
 
-### SwiftyVersion
+### `SwiftyVersion`
 
 Before using `SwiftyVersionTracker`, you must implement _class_ or _struct_ which comfirms to `SwiftyVersion`. `SwiftyVersion` is simple protocol as described below.
 
@@ -69,7 +71,7 @@ public protocol SwiftyVersion: Equatable {
 ```
 If you need more explanation about software versioning, see [Wikipedia](https://en.wikipedia.org/wiki/Software_versioning). 😃
 
-### SwiftyVersionIntInt: SwiftyVersion
+### `SwiftyVersionIntInt: SwiftyVersion`
 
 OK, We know you wanna just using `SwiftyVersionTracker`, without any effort as possible, and most of applications using just numbers something like `version: 1.2.3, build: 10`. For you, we implemented `SwiftyVersionIntInt` which supports versioning rule using Integers only. 😉
 
@@ -82,11 +84,11 @@ XCTAssertEqual(version.release, 3)
 XCTAssertEqual(version.build, 4)
 ```
 
-### SwiftyVersionTracker
+### `SwiftyVersionTracker`
 
 Finally, it's time to use `SwiftyVersionTracker`!! You have two ways to initialize `SwiftyVersionTracker`.
 
-#### 1.With Bundle
+#### 1. With Bundle
 
 First way is with bundle, and this is _the best way_ for most applications. Initialize `SwiftyVersionTracker` _without_ parameters, initializer will try initialize `YourVersion: SwiftyVersion`
 with bundle version strings. Bundle version strings are defined in target general settings in Xcode, just like below.
@@ -100,7 +102,7 @@ let tracker = try! SwiftyVersionTracker<YourVersion>()
 ```
 Looks pretty cool, huh? 😆
 
-#### 2.With Your Own
+#### 2. With Your Own
 
 If you have version strings in database, code or something like that, initialize `SwiftyVersionTracker` with parameters `versionString` and `buildString`.
 

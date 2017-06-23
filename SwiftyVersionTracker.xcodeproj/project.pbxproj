@@ -46,6 +46,7 @@
 		D304909C1ECE65F400C3620F /* SwiftyVersionIntInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyVersionIntInt.swift; sourceTree = "<group>"; };
 		D304909E1ECE662B00C3620F /* SwiftyVersionTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyVersionTracker.swift; sourceTree = "<group>"; };
 		D30490A01ECE6B4700C3620F /* SwiftyVersionIntIntTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyVersionIntIntTests.swift; sourceTree = "<group>"; };
+		D338AB951EE8E62D00B0E403 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D3921D071ECDC55E006221DE /* SwiftyVersionTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyVersionTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3921D0A1ECDC55E006221DE /* SwiftyVersionTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyVersionTracker.h; sourceTree = "<group>"; };
 		D3921D0B1ECDC55E006221DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,6 +104,7 @@
 			children = (
 				D3E575501EDF0D80003A4434 /* LICENSE */,
 				D3E575511EE59266003A4434 /* SwiftyVersionTracker.podspec */,
+				D338AB951EE8E62D00B0E403 /* README.md */,
 				D3921D091ECDC55E006221DE /* SwiftyVersionTracker */,
 				D3921D141ECDC55E006221DE /* SwiftyVersionTrackerTests */,
 				D3E5752C1ED9D458003A4434 /* ExampleApp */,
