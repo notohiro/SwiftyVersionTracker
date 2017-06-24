@@ -1,8 +1,10 @@
 # SwiftyVersionTracker
 
+[![Swift](https://img.shields.io/badge/Swift-3.0%2B-orange.svg)](https://swift.org)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/SwiftyVersionTracker.svg)](https://img.shields.io/cocoapods/v/SwiftyVersionTracker.svg)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/cocoapods/p/NowCastMapView.svg?style=flat)](http://cocoapods.org/pods/NowCastMapView)
+![license](https://cocoapod-badges.herokuapp.com/l/URWeatherView/badge.png)
 [![Twitter](https://img.shields.io/badge/twitter-@notohiro-blue.svg?style=flat)](http://twitter.com/notohiro)
 
 ## Quick Look
