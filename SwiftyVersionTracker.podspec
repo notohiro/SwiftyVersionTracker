@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SwiftyVersionTracker"
-  s.version          = "1.0.0"
+  s.version          = "4.0.0"
   s.summary          = "With SwiftyVersionTracker, you can track which versions previously installed. Convenient methods are also available."
   s.homepage         = "https://github.com/notohiro/SwiftyVersionTracker"
   s.license          = 'MIT'
