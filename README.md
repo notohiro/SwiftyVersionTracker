@@ -1,6 +1,7 @@
 # SwiftyVersionTracker
 
-[![Swift](https://img.shields.io/badge/Swift-3.0%2B-orange.svg)](https://swift.org)
+[![Swift](https://img.shields.io/badge/Swift-4.1%2B-orange.svg)](https://swift.org)
+[![Build Status](https://travis-ci.org/notohiro/SwiftyVersionTracker.svg?branch=master)](https://travis-ci.org/notohiro/SwiftyVersionTracker)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/SwiftyVersionTracker.svg)](https://img.shields.io/cocoapods/v/SwiftyVersionTracker.svg)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/cocoapods/p/NowCastMapView.svg?style=flat)](http://cocoapods.org/pods/NowCastMapView)
@@ -121,7 +122,7 @@ If you wanna track versions even within App Extension, you can specify `userDefa
 ## Requirements
 
 - iOS 8.0+
-- Xcode 8.0+
+- Xcode 9.3+
 
 ## Installation
 
@@ -132,7 +133,7 @@ SwiftyVersionTracker is available through [CocoaPods](http://cocoapods.org) and 
 To install, simply add the following line to your `Podfile`:
 
 ```ruby
-platform :ios, '8.0'
+platform :ios, '11.0'
 use_frameworks!
 
 pod 'SwiftyVersionTracker'
