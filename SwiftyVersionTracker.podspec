@@ -6,7 +6,10 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Hiroshi Noto" => "notohiro@gmail.com" }
   s.source           = { :git => "https://github.com/notohiro/SwiftyVersionTracker.git", :tag => s.version.to_s }
+
   s.platform         = :ios, '8.0'
+  s.swift_version    = '4.1'
+
   s.requires_arc     = true
   s.source_files     = 'SwiftyVersionTracker/*'
 end
