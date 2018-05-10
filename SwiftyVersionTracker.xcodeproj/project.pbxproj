@@ -54,6 +54,8 @@
 		D3921D151ECDC55E006221DE /* SwiftyVersionTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyVersionTrackerTests.swift; sourceTree = "<group>"; };
 		D3921D171ECDC55E006221DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3921D211ECDC572006221DE /* SwiftyVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyVersion.swift; sourceTree = "<group>"; };
+		D39C459F20A35A1300EEC8D3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D39C45A020A35A1300EEC8D3 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		D3E5752B1ED9D458003A4434 /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E5752D1ED9D458003A4434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3E5752F1ED9D458003A4434 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,8 @@
 		D3921CFD1ECDC55E006221DE = {
 			isa = PBXGroup;
 			children = (
+				D39C459F20A35A1300EEC8D3 /* .gitignore */,
+				D39C45A020A35A1300EEC8D3 /* .travis.yml */,
 				D3E575501EDF0D80003A4434 /* LICENSE */,
 				D3E575511EE59266003A4434 /* SwiftyVersionTracker.podspec */,
 				D338AB951EE8E62D00B0E403 /* README.md */,
