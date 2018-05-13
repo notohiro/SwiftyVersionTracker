@@ -1,9 +1,0 @@
-language: objective-c
-osx_image: xcode9.3
-notifications:
-  email: false
-  slack:
-    secure: PDOEIJpXyZ/aoFIJMMw1M2ZJlKx7hGIc11AabQKvrSjb40B0Rkf7Yxx1U6cRL2Ik1qV6W1hMBO97VWQ+NxF1JVVgf3Kvc6MZIK5rZRBQQr/BbbpXq5aT30UVqTk5vP6bOZifs8Xe/C8lE5LAWOoN9e5ujc4VKJB5Tr2C3wk1vVg97rJYygsw6qcWt9TErseXRZXofAlWF8709UHt08vH+VcIjORGxB04vGWj7un6cJXqii3XSv4fqbgy4drKpGTo89l7NcZwDnUbryDSzMvxkV9hb7bvg//Yw+JATH07eDTaJMPYCMrfHF9TMMpuX1zFxn/liHKAJ3EiZNxx5qDNTGe8Y9ah+mYFVszcEUUDMazXxo0ur63YmGKmRd3ItCSURNzXZ61seNRzGEEz6C3xMBTVK5m1/5Wh5AVYjEzYVGr1JiZckxOTf0dw++AAfELSuK9OViat8Yj3dbmp1fNPvCyTq2rSnINRZdmY0Xj4uUVco6vofNo8KYl/2nF968YncGpOGMtBYyh/+rjR+TdA1EK3Bn/ccf7J5NNxZICR5LHKn/39mexiYnOlkzD257/VSfRLTmL30cFWYW8kd0cbfqC+a7NhNMvRCO3nQ0sQ76rXsTxQm6C6HfvQWrVpwqxrtOm3gboro8B54E67orF5JM3mj4lKczDlrkzKx6oLl/Y=
-script:
-- xcodebuild clean test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone
-  X,OS=11.3' -project SwiftyVersionTracker.xcodeproj -scheme 'SwiftyVersionTracker iOS' CODE_SIGNING_REQUIRED=NO
