@@ -1,7 +1,7 @@
 # SwiftyVersionTracker
 
 [![Swift](https://img.shields.io/badge/Swift-4.1%2B-orange.svg)](https://swift.org)
-[![Build Status](https://travis-ci.org/notohiro/SwiftyVersionTracker.svg?branch=master)](https://travis-ci.org/notohiro/SwiftyVersionTracker)
+[![Build Status](https://www.bitrise.io/app/0a56a372c9f524d7/status.svg?token=cy653i_YsFGGSC6_qNonrw&branch=master)](https://www.bitrise.io/app/0a56a372c9f524d7)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/SwiftyVersionTracker.svg)](https://img.shields.io/cocoapods/v/SwiftyVersionTracker.svg)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/cocoapods/p/NowCastMapView.svg?style=flat)](http://cocoapods.org/pods/NowCastMapView)
