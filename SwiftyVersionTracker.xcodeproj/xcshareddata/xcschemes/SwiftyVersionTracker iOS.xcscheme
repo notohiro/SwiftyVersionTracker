@@ -20,6 +20,20 @@
                ReferencedContainer = "container:SwiftyVersionTracker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D386DD91216E558D0037EFF7"
+               BuildableName = "SwiftyVersionTracker iOS Tests.xctest"
+               BlueprintName = "SwiftyVersionTracker iOS Tests"
+               ReferencedContainer = "container:SwiftyVersionTracker.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -32,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D3921D0F1ECDC55E006221DE"
-               BuildableName = "SwiftyVersionTrackerTests.xctest"
-               BlueprintName = "SwiftyVersionTrackerTests"
+               BlueprintIdentifier = "D386DD91216E558D0037EFF7"
+               BuildableName = "SwiftyVersionTracker iOS Tests.xctest"
+               BlueprintName = "SwiftyVersionTracker iOS Tests"
                ReferencedContainer = "container:SwiftyVersionTracker.xcodeproj">
             </BuildableReference>
          </TestableReference>

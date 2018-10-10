@@ -7,13 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D304909D1ECE65F500C3620F /* SwiftyVersionIntInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D304909C1ECE65F400C3620F /* SwiftyVersionIntInt.swift */; };
-		D304909F1ECE662B00C3620F /* SwiftyVersionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D304909E1ECE662B00C3620F /* SwiftyVersionTracker.swift */; };
-		D30490A11ECE6B4700C3620F /* SwiftyVersionIntIntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30490A01ECE6B4700C3620F /* SwiftyVersionIntIntTests.swift */; };
-		D3921D111ECDC55E006221DE /* SwiftyVersionTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3921D071ECDC55E006221DE /* SwiftyVersionTracker.framework */; };
-		D3921D161ECDC55E006221DE /* SwiftyVersionTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3921D151ECDC55E006221DE /* SwiftyVersionTrackerTests.swift */; };
-		D3921D181ECDC55E006221DE /* SwiftyVersionTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = D3921D0A1ECDC55E006221DE /* SwiftyVersionTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3921D221ECDC572006221DE /* SwiftyVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3921D211ECDC572006221DE /* SwiftyVersion.swift */; };
+		D386DDA0216E55D80037EFF7 /* SwiftyVersionIntIntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30490A01ECE6B4700C3620F /* SwiftyVersionIntIntTests.swift */; };
+		D386DDA1216E55DB0037EFF7 /* SwiftyVersionTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3921D151ECDC55E006221DE /* SwiftyVersionTrackerTests.swift */; };
+		D386DDA6216E57C80037EFF7 /* SwiftyVersionTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E575441EDF0880003A4434 /* SwiftyVersionTracker.framework */; };
 		D3E5752E1ED9D458003A4434 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E5752D1ED9D458003A4434 /* AppDelegate.swift */; };
 		D3E575301ED9D458003A4434 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E5752F1ED9D458003A4434 /* ViewController.swift */; };
 		D3E575331ED9D458003A4434 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E575311ED9D458003A4434 /* Main.storyboard */; };
@@ -26,19 +22,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D3921D121ECDC55E006221DE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D3921CFE1ECDC55E006221DE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D3921D061ECDC55E006221DE;
-			remoteInfo = SwiftyVersionTracker;
-		};
-		D3E5753D1ED9D463003A4434 /* PBXContainerItemProxy */ = {
+		D386DD9D216E55A90037EFF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D3921CFE1ECDC55E006221DE /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D3E5752A1ED9D458003A4434;
 			remoteInfo = ExampleApp;
+		};
+		D386DDA3216E57970037EFF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3921CFE1ECDC55E006221DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3E575431EDF0880003A4434;
+			remoteInfo = "SwiftyVersionTracker iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -47,12 +43,11 @@
 		D304909E1ECE662B00C3620F /* SwiftyVersionTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyVersionTracker.swift; sourceTree = "<group>"; };
 		D30490A01ECE6B4700C3620F /* SwiftyVersionIntIntTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyVersionIntIntTests.swift; sourceTree = "<group>"; };
 		D338AB951EE8E62D00B0E403 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D3921D071ECDC55E006221DE /* SwiftyVersionTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyVersionTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D386DD92216E558D0037EFF7 /* SwiftyVersionTracker iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftyVersionTracker iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3921D0A1ECDC55E006221DE /* SwiftyVersionTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyVersionTracker.h; sourceTree = "<group>"; };
-		D3921D0B1ECDC55E006221DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3921D101ECDC55E006221DE /* SwiftyVersionTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyVersionTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3921D0B1ECDC55E006221DE /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		D3921D151ECDC55E006221DE /* SwiftyVersionTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyVersionTrackerTests.swift; sourceTree = "<group>"; };
-		D3921D171ECDC55E006221DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3921D171ECDC55E006221DE /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		D3921D211ECDC572006221DE /* SwiftyVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyVersion.swift; sourceTree = "<group>"; };
 		D39C459F20A35A1300EEC8D3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		D3E5752B1ED9D458003A4434 /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,18 +63,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D3921D031ECDC55E006221DE /* Frameworks */ = {
+		D386DD8F216E558D0037EFF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D3921D0D1ECDC55E006221DE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D3921D111ECDC55E006221DE /* SwiftyVersionTracker.framework in Frameworks */,
+				D386DDA6216E57C80037EFF7 /* SwiftyVersionTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +88,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D386DD9F216E55B30037EFF7 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D30490A01ECE6B4700C3620F /* SwiftyVersionIntIntTests.swift */,
+				D3921D151ECDC55E006221DE /* SwiftyVersionTrackerTests.swift */,
+				D3921D171ECDC55E006221DE /* Info-iOS.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		D3921CFD1ECDC55E006221DE = {
 			isa = PBXGroup;
 			children = (
@@ -108,9 +106,8 @@
 				D3E575511EE59266003A4434 /* SwiftyVersionTracker.podspec */,
 				D338AB951EE8E62D00B0E403 /* README.md */,
 				D3921D091ECDC55E006221DE /* SwiftyVersionTracker */,
-				D3921D141ECDC55E006221DE /* SwiftyVersionTrackerTests */,
 				D3E5752C1ED9D458003A4434 /* ExampleApp */,
-				D3E575451EDF0881003A4434 /* SwiftyVersionTracker iOS */,
+				D386DD9F216E55B30037EFF7 /* Tests */,
 				D3921D081ECDC55E006221DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,10 +115,9 @@
 		D3921D081ECDC55E006221DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D3921D071ECDC55E006221DE /* SwiftyVersionTracker.framework */,
-				D3921D101ECDC55E006221DE /* SwiftyVersionTrackerTests.xctest */,
 				D3E5752B1ED9D458003A4434 /* ExampleApp.app */,
 				D3E575441EDF0880003A4434 /* SwiftyVersionTracker.framework */,
+				D386DD92216E558D0037EFF7 /* SwiftyVersionTracker iOS Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,22 +126,12 @@
 			isa = PBXGroup;
 			children = (
 				D3921D0A1ECDC55E006221DE /* SwiftyVersionTracker.h */,
-				D3921D0B1ECDC55E006221DE /* Info.plist */,
+				D3921D0B1ECDC55E006221DE /* Info-iOS.plist */,
 				D3921D211ECDC572006221DE /* SwiftyVersion.swift */,
 				D304909C1ECE65F400C3620F /* SwiftyVersionIntInt.swift */,
 				D304909E1ECE662B00C3620F /* SwiftyVersionTracker.swift */,
 			);
 			path = SwiftyVersionTracker;
-			sourceTree = "<group>";
-		};
-		D3921D141ECDC55E006221DE /* SwiftyVersionTrackerTests */ = {
-			isa = PBXGroup;
-			children = (
-				D30490A01ECE6B4700C3620F /* SwiftyVersionIntIntTests.swift */,
-				D3921D151ECDC55E006221DE /* SwiftyVersionTrackerTests.swift */,
-				D3921D171ECDC55E006221DE /* Info.plist */,
-			);
-			path = SwiftyVersionTrackerTests;
 			sourceTree = "<group>";
 		};
 		D3E5752C1ED9D458003A4434 /* ExampleApp */ = {
@@ -161,24 +147,9 @@
 			path = ExampleApp;
 			sourceTree = "<group>";
 		};
-		D3E575451EDF0881003A4434 /* SwiftyVersionTracker iOS */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "SwiftyVersionTracker iOS";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		D3921D041ECDC55E006221DE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D3921D181ECDC55E006221DE /* SwiftyVersionTracker.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D3E575411EDF0880003A4434 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,41 +161,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D3921D061ECDC55E006221DE /* SwiftyVersionTracker */ = {
+		D386DD91216E558D0037EFF7 /* SwiftyVersionTracker iOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3921D1B1ECDC55E006221DE /* Build configuration list for PBXNativeTarget "SwiftyVersionTracker" */;
+			buildConfigurationList = D386DD9A216E558D0037EFF7 /* Build configuration list for PBXNativeTarget "SwiftyVersionTracker iOS Tests" */;
 			buildPhases = (
-				D3921D021ECDC55E006221DE /* Sources */,
-				D3921D031ECDC55E006221DE /* Frameworks */,
-				D3921D041ECDC55E006221DE /* Headers */,
-				D3921D051ECDC55E006221DE /* Resources */,
+				D386DD8E216E558D0037EFF7 /* Sources */,
+				D386DD8F216E558D0037EFF7 /* Frameworks */,
+				D386DD90216E558D0037EFF7 /* Resources */,
+				D386DDA2216E57480037EFF7 /* Swiftlint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D386DDA4216E57970037EFF7 /* PBXTargetDependency */,
+				D386DD9E216E55A90037EFF7 /* PBXTargetDependency */,
 			);
-			name = SwiftyVersionTracker;
-			productName = SwiftyVersionTracker;
-			productReference = D3921D071ECDC55E006221DE /* SwiftyVersionTracker.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D3921D0F1ECDC55E006221DE /* SwiftyVersionTrackerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D3921D1E1ECDC55E006221DE /* Build configuration list for PBXNativeTarget "SwiftyVersionTrackerTests" */;
-			buildPhases = (
-				D3921D0C1ECDC55E006221DE /* Sources */,
-				D3921D0D1ECDC55E006221DE /* Frameworks */,
-				D3921D0E1ECDC55E006221DE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D3921D131ECDC55E006221DE /* PBXTargetDependency */,
-				D3E5753E1ED9D463003A4434 /* PBXTargetDependency */,
-			);
-			name = SwiftyVersionTrackerTests;
-			productName = SwiftyVersionTrackerTests;
-			productReference = D3921D101ECDC55E006221DE /* SwiftyVersionTrackerTests.xctest */;
+			name = "SwiftyVersionTracker iOS Tests";
+			productName = "SwiftyVersionTracker iOS Tests";
+			productReference = D386DD92216E558D0037EFF7 /* SwiftyVersionTracker iOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		D3E5752A1ED9D458003A4434 /* ExampleApp */ = {
@@ -252,6 +206,7 @@
 				D3E575401EDF0880003A4434 /* Frameworks */,
 				D3E575411EDF0880003A4434 /* Headers */,
 				D3E575421EDF0880003A4434 /* Resources */,
+				D386DD8D216E55520037EFF7 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -268,26 +223,23 @@
 		D3921CFE1ECDC55E006221DE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Hiroshi Noto";
 				TargetAttributes = {
-					D3921D061ECDC55E006221DE = {
-						CreatedOnToolsVersion = 8.3.1;
-						LastSwiftMigration = 0830;
-						ProvisioningStyle = Automatic;
-					};
-					D3921D0F1ECDC55E006221DE = {
-						CreatedOnToolsVersion = 8.3.1;
+					D386DD91216E558D0037EFF7 = {
+						CreatedOnToolsVersion = 10.0;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D3E5752A1ED9D458003A4434;
 					};
 					D3E5752A1ED9D458003A4434 = {
 						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					D3E575431EDF0880003A4434 = {
 						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -305,23 +257,15 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D3921D061ECDC55E006221DE /* SwiftyVersionTracker */,
 				D3E575431EDF0880003A4434 /* SwiftyVersionTracker iOS */,
-				D3921D0F1ECDC55E006221DE /* SwiftyVersionTrackerTests */,
+				D386DD91216E558D0037EFF7 /* SwiftyVersionTracker iOS Tests */,
 				D3E5752A1ED9D458003A4434 /* ExampleApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D3921D051ECDC55E006221DE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D3921D0E1ECDC55E006221DE /* Resources */ = {
+		D386DD90216E558D0037EFF7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -347,23 +291,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXSourcesBuildPhase section */
-		D3921D021ECDC55E006221DE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		D386DD8D216E55520037EFF7 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D304909D1ECE65F500C3620F /* SwiftyVersionIntInt.swift in Sources */,
-				D304909F1ECE662B00C3620F /* SwiftyVersionTracker.swift in Sources */,
-				D3921D221ECDC572006221DE /* SwiftyVersion.swift in Sources */,
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint lint --path SwiftyVersionTracker\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-		D3921D0C1ECDC55E006221DE /* Sources */ = {
+		D386DDA2216E57480037EFF7 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint lint --path Tests\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D386DD8E216E558D0037EFF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D30490A11ECE6B4700C3620F /* SwiftyVersionIntIntTests.swift in Sources */,
-				D3921D161ECDC55E006221DE /* SwiftyVersionTrackerTests.swift in Sources */,
+				D386DDA0216E55D80037EFF7 /* SwiftyVersionIntIntTests.swift in Sources */,
+				D386DDA1216E55DB0037EFF7 /* SwiftyVersionTrackerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,15 +362,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D3921D131ECDC55E006221DE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D3921D061ECDC55E006221DE /* SwiftyVersionTracker */;
-			targetProxy = D3921D121ECDC55E006221DE /* PBXContainerItemProxy */;
-		};
-		D3E5753E1ED9D463003A4434 /* PBXTargetDependency */ = {
+		D386DD9E216E55A90037EFF7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D3E5752A1ED9D458003A4434 /* ExampleApp */;
-			targetProxy = D3E5753D1ED9D463003A4434 /* PBXContainerItemProxy */;
+			targetProxy = D386DD9D216E55A90037EFF7 /* PBXContainerItemProxy */;
+		};
+		D386DDA4216E57970037EFF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3E575431EDF0880003A4434 /* SwiftyVersionTracker iOS */;
+			targetProxy = D386DDA3216E57970037EFF7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -421,6 +394,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D386DD9B216E558D0037EFF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Tests/Info-iOS.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.notohiro.SwiftyVersionTracker-iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExampleApp.app/ExampleApp";
+			};
+			name = Debug;
+		};
+		D386DD9C216E558D0037EFF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Tests/Info-iOS.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.notohiro.SwiftyVersionTracker-iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExampleApp.app/ExampleApp";
+			};
+			name = Release;
+		};
 		D3921D191ECDC55E006221DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -540,77 +558,6 @@
 			};
 			name = Release;
 		};
-		D3921D1C1ECDC55E006221DE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftyVersionTracker/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.notohiro.SwiftyVersionTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		D3921D1D1ECDC55E006221DE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftyVersionTracker/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.notohiro.SwiftyVersionTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		D3921D1F1ECDC55E006221DE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = SwiftyVersionTrackerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.notohiro.SwiftyVersionTrackerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExampleApp.app/ExampleApp";
-			};
-			name = Debug;
-		};
-		D3921D201ECDC55E006221DE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = SwiftyVersionTrackerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.notohiro.SwiftyVersionTrackerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExampleApp.app/ExampleApp";
-			};
-			name = Release;
-		};
 		D3E5753A1ED9D458003A4434 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -621,7 +568,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.notohiro.SwiftyVersionTracker.ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -635,7 +582,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.notohiro.SwiftyVersionTracker.ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -650,14 +597,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftyVersionTracker/Info.plist;
+				INFOPLIST_FILE = "SwiftyVersionTracker/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.notohiro.SwiftyVersionTracker;
 				PRODUCT_NAME = SwiftyVersionTracker;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -672,43 +619,34 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftyVersionTracker/Info.plist;
+				INFOPLIST_FILE = "SwiftyVersionTracker/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.notohiro.SwiftyVersionTracker;
 				PRODUCT_NAME = SwiftyVersionTracker;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D386DD9A216E558D0037EFF7 /* Build configuration list for PBXNativeTarget "SwiftyVersionTracker iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D386DD9B216E558D0037EFF7 /* Debug */,
+				D386DD9C216E558D0037EFF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D3921D011ECDC55E006221DE /* Build configuration list for PBXProject "SwiftyVersionTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3921D191ECDC55E006221DE /* Debug */,
 				D3921D1A1ECDC55E006221DE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D3921D1B1ECDC55E006221DE /* Build configuration list for PBXNativeTarget "SwiftyVersionTracker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D3921D1C1ECDC55E006221DE /* Debug */,
-				D3921D1D1ECDC55E006221DE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D3921D1E1ECDC55E006221DE /* Build configuration list for PBXNativeTarget "SwiftyVersionTrackerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D3921D1F1ECDC55E006221DE /* Debug */,
-				D3921D201ECDC55E006221DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
