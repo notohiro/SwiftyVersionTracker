@@ -8,14 +8,14 @@
 
 import Foundation
 
-let swiftyVersionTrackerSaveKey	= "SwiftyVersionTrackerSaveKey"
-let swiftyVersionTrackerSaveKeyVersion = "SwiftyVersionTrackerSaveKeyVersion"
-let swiftyVersionTrackerSaveKeyBuild = "SwiftyVersionTrackerSaveKeyBuild"
+private let kSwiftyVersionTrackerSaveKey	= "SwiftyVersionTrackerSaveKey"
+private let kSwiftyVersionTrackerSaveKeyVersion = "SwiftyVersionTrackerSaveKeyVersion"
+private let kSwiftyVersionTrackerSaveKeyBuild = "SwiftyVersionTrackerSaveKeyBuild"
 
 open class SwiftyVersionTracker<T: SwiftyVersion> {
-	struct BundleVersion {
-		let version: String?
-		let build: String?
+    public struct BundleVersion {
+		public let version: String?
+		public let build: String?
 	}
 
 	open var isFirstLaunchEver: Bool {
@@ -46,18 +46,20 @@ open class SwiftyVersionTracker<T: SwiftyVersion> {
 
 	open private(set) var userDefaults = UserDefaults.standard
 
-	public init(versionString: String? = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String,
-	            buildString: String? = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String,
-	            userDefaults: UserDefaults? = nil) throws {
+	public init(
+        versionString: String? = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String,
+        buildString: String? = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String,
+        userDefaults: UserDefaults? = nil
+    ) throws {
 		// set UserDefaults
 		if let userDefaults = userDefaults { self.userDefaults = userDefaults }
 
 		// restore history / bundleVersion
-		if let data = self.userDefaults.value(forKey: swiftyVersionTrackerSaveKey) as? [[String: String?]] {
+		if let data = self.userDefaults.value(forKey: kSwiftyVersionTrackerSaveKey) as? [[String: String?]] {
 			var bundleVersions = [BundleVersion]()
 
 			data.forEach { aData in
-				if let versionString = aData[swiftyVersionTrackerSaveKeyVersion], let buildString = aData[swiftyVersionTrackerSaveKeyBuild] {
+				if let versionString = aData[kSwiftyVersionTrackerSaveKeyVersion], let buildString = aData[kSwiftyVersionTrackerSaveKeyBuild] {
 					bundleVersions.append(BundleVersion(version: versionString, build: buildString))
 				}
 			}
@@ -68,7 +70,7 @@ open class SwiftyVersionTracker<T: SwiftyVersion> {
 			}
 
 			self.bundleVersions = bundleVersions
-		} else if self.userDefaults.value(forKey: swiftyVersionTrackerSaveKey) != nil {
+		} else if self.userDefaults.value(forKey: kSwiftyVersionTrackerSaveKey) != nil {
 			// invalid object
 			SwiftyVersionTracker<T>.deleteData(userDefaults: self.userDefaults)
 		}
@@ -89,7 +91,7 @@ open class SwiftyVersionTracker<T: SwiftyVersion> {
 			.filter { version in
 				current.major == version.major && current.minor == version.minor && current.release == version.release
 			}
-			.count == 0
+			.isEmpty
 		self.isFirstLaunchForVersion = isFirstLaunchForVersion
 
 		isFirstLaunchForBuild = isFirstLaunchForVersion ? true : current.build != last?.build
@@ -100,7 +102,7 @@ open class SwiftyVersionTracker<T: SwiftyVersion> {
 				.filter { version in
 					current == version
 				}
-				.count == 0
+				.isEmpty
 		}
 
 		// set last
@@ -118,27 +120,31 @@ open class SwiftyVersionTracker<T: SwiftyVersion> {
 		save()
 	}
 
+    deinit {
+        save()
+    }
+
 	private func save() {
 		var bundleVersionsAsDictionary = [[String: String?]]()
 
 		bundleVersions.forEach { bundleVersion in
 			var bundleVersionAsDictionary = [String: String?]()
-			bundleVersionAsDictionary[swiftyVersionTrackerSaveKeyVersion] = bundleVersion.version
-			bundleVersionAsDictionary[swiftyVersionTrackerSaveKeyBuild] = bundleVersion.build
+			bundleVersionAsDictionary[kSwiftyVersionTrackerSaveKeyVersion] = bundleVersion.version
+			bundleVersionAsDictionary[kSwiftyVersionTrackerSaveKeyBuild] = bundleVersion.build
 
 			bundleVersionsAsDictionary.append(bundleVersionAsDictionary)
 		}
 
-		userDefaults.setValue(bundleVersionsAsDictionary, forKey: swiftyVersionTrackerSaveKey)
+		userDefaults.setValue(bundleVersionsAsDictionary, forKey: kSwiftyVersionTrackerSaveKey)
 		userDefaults.synchronize()
 	}
 }
 
-extension SwiftyVersionTracker {
+public extension SwiftyVersionTracker {
 	static func deleteData(userDefaults: UserDefaults? = nil) {
 		let userDefaults = userDefaults ?? UserDefaults.standard
 
-		userDefaults.removeObject(forKey: swiftyVersionTrackerSaveKey)
+		userDefaults.removeObject(forKey: kSwiftyVersionTrackerSaveKey)
 		userDefaults.synchronize()
 	}
 }

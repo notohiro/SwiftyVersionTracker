@@ -49,6 +49,7 @@
 		D3921D151ECDC55E006221DE /* SwiftyVersionTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyVersionTrackerTests.swift; sourceTree = "<group>"; };
 		D3921D171ECDC55E006221DE /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		D3921D211ECDC572006221DE /* SwiftyVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyVersion.swift; sourceTree = "<group>"; };
+		D395B9E222E875CC00A007AC /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		D39C459F20A35A1300EEC8D3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		D3E5752B1ED9D458003A4434 /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E5752D1ED9D458003A4434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 		D3921CFD1ECDC55E006221DE = {
 			isa = PBXGroup;
 			children = (
+				D395B9E222E875CC00A007AC /* .swiftlint.yml */,
 				D39C459F20A35A1300EEC8D3 /* .gitignore */,
 				D3E575501EDF0D80003A4434 /* LICENSE */,
 				D3E575511EE59266003A4434 /* SwiftyVersionTracker.podspec */,
@@ -309,7 +311,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint lint --path SwiftyVersionTracker\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint autocorrect\n  swiftlint  \nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		D386DDA2216E57480037EFF7 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;

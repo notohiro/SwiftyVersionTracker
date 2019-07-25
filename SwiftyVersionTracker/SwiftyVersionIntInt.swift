@@ -58,8 +58,8 @@ public struct SwiftyVersionIntInt: SwiftyVersion {
 	}
 }
 
-extension SwiftyVersionIntInt {
-	public static func == (lhs: SwiftyVersionIntInt, rhs: SwiftyVersionIntInt) -> Bool {
+public extension SwiftyVersionIntInt {
+    static func == (lhs: SwiftyVersionIntInt, rhs: SwiftyVersionIntInt) -> Bool {
 		return lhs.major == rhs.major && lhs.minor == rhs.minor && lhs.release == rhs.release && lhs.build == rhs.build
 	}
 }
