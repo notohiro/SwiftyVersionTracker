@@ -122,7 +122,7 @@ If you wanna track versions even within App Extension, you can specify `userDefa
 ## Requirements
 
 - iOS 8.0+
-- Xcode 13.0+
+- Xcode 11.0+
 
 ## Installation
 
